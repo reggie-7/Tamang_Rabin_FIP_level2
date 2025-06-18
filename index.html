@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BURPLE - The Beverage of Flavours</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+  <div class="grid-con">
+    <h1 class="hidden">homepage</h1>
+  <div class="col-span-4 m-col-span-6 l-col-span-3">
+      <img src="images/logo.svg" alt="Logo of Burple" class="logo-img">
+  </div>
+  <div class="col-span-4 m-col-span-6 l-col-span-9">
+    <div class="nav-box">
+      <button id="burger-toggle" aria-label="Toggle navigation">
+        <span class="burger"></span>
+        <span class="burger"></span>
+        <span class="burger"></span>
+      </button>
+      <nav id="nav-menu">
+        <h2 class="hidden">navigations</h2>
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="flavours.html" class="nav-link">Flavors</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </div>
+</div>
+</header>
+    <main>
+        <!-- Home Page -->
+        <section id="home-page" class="page active">
+            <div class="grid-con">
+                <div class="col-span-4 m-col-span-12 l-col-span-12">
+                    <div class="hero">
+                        <h2>REFRESH YOUR SENSES</h2>
+                        <p>Experience the bold taste of BURPLE</p>
+                        <a href="flavours.html" class="btn">Explore Flavors</a>
+                    </div>
+                </div>
+            </div>
+        </section>  
+    </main>
+    
+    <footer>
+        <div class="grid-con">
+            <div class="col-span-4 m-col-span-12 l-col-span-12">
+                <div class="footer-box">
+                    <h3>BURPLE BEVERAGE CO.</h3>
+                    <p>CRACK . SIP . SMILE</p>
+                    
+                    <div class="social-links">
+    <a href="facebook">
+       <img src="images/facebook.png" alt="facebook icon">
+    </a>
+
+ 
+    <a href="instagram">
+       <img src="images/instagram.png" alt="instagram icon">
+    </a>
+
+    <a href="twitter">
+         <img src="images/twitter.png" alt="twitter icon">
+    </a>
+
+    <a href="tiktok">
+        <img src="images/tiktok.png" alt="tiktok icon">
+    </a>
+</div>
+                    
+                    <p>&copy; 2025 Burple Beverage Co. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>const burger = document.getElementById('burger-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  burger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });</script>
+</body>
+</html>
