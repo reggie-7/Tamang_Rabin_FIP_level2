@@ -1,53 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BURPLE - The Beverage of Flavours</title>
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BURPLE-ReBrand</title>
+  <link rel="stylesheet" href="css/grid.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <!-- Header -->
-    <header>
-  <div class="grid-con">
-    <h1 class="hidden">homepage</h1>
-  <div class="col-span-4 m-col-span-6 l-col-span-3">
-      <img src="images/logo.svg" alt="Logo of Burple" class="logo-img">
-  </div>
-  <div class="col-span-4 m-col-span-6 l-col-span-9">
-    <div class="nav-box">
-      <button id="burger-toggle" aria-label="Toggle navigation">
-        <span class="burger"></span>
-        <span class="burger"></span>
-        <span class="burger"></span>
+
+  <header>
+    <nav class="grid-con">
+      <h1 class="hidden">Welcome to BURPLE website</h1>
+      <div class="logo col-span-1 m-col-span-2 l-col-span-2">
+        <img src="/images/logo.svg" alt="Brand Logo" />
+      </div>
+
+      <ul class="links col-span-3 m-col-span-7 l-col-span-7" id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Flavors</a></li>
+        <li><a href="/product.html">Products</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+
+      <div class="search-bar col-span-4 m-col-span-3 l-col-span-3" id="nav-search">
+        <input type="text" placeholder="Search..." />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M21.71 20.29l-5.388-5.387A7.92 7.92 0 0 0 17 10a8 8 0 1 0-8 8 7.92 7.92 0 0 0 4.903-1.678l5.387 5.388a1 1 0 0 0 1.414-1.414zM10 16a6 6 0 1 1 6-6 6.006 6.006 0 0 1-6 6z" />
+        </svg>
+      </div>
+
+      <button class="burger" id="burger-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links nav-search">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-      <nav id="nav-menu">
-        <h2 class="hidden">navigations</h2>
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="flavours.html" class="nav-link">Flavors</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-      </nav>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <video id="hero-video" autoplay loop playsinline>
+      <source src="/video/Infomercial.mp4" type="video/mp4" />
+    </video>
+    <div class="video-overlay"></div>
+    <div class="hero-content">
+      <h2>Welcome to the world of Burple!</h2>
     </div>
-  </div>
-</div>
-</header>
-    <main>
-        <!-- Home Page -->
-        <section id="home-page" class="page active">
-            <div class="grid-con">
-                <div class="col-span-4 m-col-span-12 l-col-span-12">
-                    <div class="hero">
-                        <h2>REFRESH YOUR SENSES</h2>
-                        <p>Experience the bold taste of BURPLE</p>
-                        <a href="flavours.html" class="btn">Explore Flavors</a>
-                    </div>
-                </div>
-            </div>
-        </section>  
-    </main>
+    <div class="video-controls">
+      <button id="volume-btn" aria-label="Toggle sound">
+        <svg id="volume-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3z"/></svg>
+      </button>
+      <button id="rewind-btn" aria-label="Rewind video">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.5 16.5l4-4-4-4V7.5L19 12l-6.5 4.5v-2zM5.5 16.5l4-4-4-4V7.5L12 12l-6.5 4.5v-2z"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <section class="flavors grid-con">
+    <h2 class="col-span-4 m-col-span-12">Our Flavors</h2>
+
+    <div class="flavor-title col-span-4 m-col-span-4 l-col-span-4" tabindex="0">
+      <img src="/images/grape.png" alt="Flavor 1 Can" />
+      <h3>Flavor 1</h3>
+    </div>
+
+    <div class="flavor-title col-span-4 m-col-span-4 l-col-span-4" tabindex="0">
+      <img src="/images/peach.png" alt="Flavor 2 Can" />
+      <h3>Flavor 2</h3>
+    </div>
+
+    <div class="flavor-title col-span-4 m-col-span-4 l-col-span-4" tabindex="0">
+      <img src="/images/melon.png" alt="Flavor 3 Can" />
+      <h3>Flavor 3</h3>
+    </div>
+
+    <a href="/product.html" class="flavor-cta col-span-4">More</a>
+  </section>
+  
+  <section class="social grid-con">
+    <h2 class="col-span-4 m-col-span-12">Get Social</h2>
     
-    <footer>
+    <div class="social-image-container col-span-4 m-col-span-12">
+      <img src="/images/people.jpg" alt="Social Media Background" height="600">
+      
+      <div class="social-icons-overlay">
+        <a href="#" class="social-icon facebook" title="Facebook"></a>
+        <a href="#" class="social-icon instagram" title="Instagram"></a>
+        <a href="#" class="social-icon twitter" title="Twitter"></a>
+        <a href="#" class="social-icon tiktok" title="TikTok"></a>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
         <div class="grid-con">
             <div class="col-span-4 m-col-span-12 l-col-span-12">
                 <div class="footer-box">
@@ -79,11 +125,6 @@
         </div>
     </footer>
 
-    <script>const burger = document.getElementById('burger-toggle');
-  const navMenu = document.getElementById('nav-menu');
-
-  burger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-  });</script>
+  <script src="/js/script.js"></script>
 </body>
 </html>
